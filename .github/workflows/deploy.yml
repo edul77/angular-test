@@ -58,6 +58,7 @@ jobs:
           aws s3 sync ./dist/angular-conduit/browser/* s3://${{ secrets.FRONT_END_BUC }} --delete
           aws s3 sync  s3://${{ secrets.FRONT_END_BUC }}  s3://${{ prod }}
           
+          
 
 
 
