@@ -59,10 +59,7 @@ jobs:
           
 
 
-    - name: Sync from frontend to prod bucket
-      run: |
-          aws s3 sync  s3://${{ secrets.PATH }}    s3://${{ secrets.PROD }} 
-          
+   
          
 
 
