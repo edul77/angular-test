@@ -55,8 +55,8 @@ jobs:
 
     - name: Upload frontend to s3
       run: |
-          aws s3 sync ./dist/angular-conduit/browser/* s3://${{ secrets.FRONT_END_BUC }} --delete
-          aws s3 sync  s3://${{ secrets.FRONT_END_BUC }}  s3://${{ secrets.prod }}
+          aws s3 sync ./dist/  s3://${{ secrets.FRONT_END_BUC }} --delete
+          aws s3 cp s3://${{ secrets.FRONT_END_BUC }}/angular-conduit/browser/*  s3://${{ secrets.prod }}
           
           
 
