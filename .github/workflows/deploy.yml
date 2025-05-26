@@ -58,6 +58,7 @@ jobs:
           aws s3 sync ./dist/  s3://${{ secrets.FRONT_END_BUC }} --delete
           aws s3 cp s3://${{ secrets.path }} s3://${{ secrets.prod }}
 
+
           
           
           
