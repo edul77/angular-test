@@ -16,7 +16,8 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: edul77/angular-test
-        token: ${{ secrets.PAT }}
+        token: ${{ secrets.PAT 
+        
 
 
 # ───────────────────────────────────────────────────
