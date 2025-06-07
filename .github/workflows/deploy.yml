@@ -56,7 +56,7 @@ jobs:
 
     - name: Upload frontend to s3
       run: |
-          aws s3 sync ./dist/angular-conduit/* s3://fuck-buc/
+          aws s3 sync .dist/ s3://fuck-buc/
 
 
 
