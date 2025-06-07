@@ -57,7 +57,7 @@ jobs:
 
     - name: Upload frontend to s3
       run: |
-          aws s3 cp dist/angular-conduit/browser/  s3://fuck-buc/browser
+          aws s3 cp dist/angular-conduit/  s3://fuck-buc
 
 
 
